@@ -4,7 +4,7 @@ Donut Mod 3 is the third major version of the first ever large scale campaign mo
 # About This Release
 This repo marks the first time since its final update in 2015 that this versions code is freely and officially available to look through.
 
-This repo includes some additional files that were excluded from the release: [carsDF](Mods/Donut Mod 3/CustomFiles/art/carsDF), [hudHD](Mods/Donut Mod 3/CustomFiles/art/hudHD] and [iconsHD](Mods/Donut Mod 3/CustomFiles/art/iconsHD).
+This repo includes some additional files that were excluded from the release: `Mods/Donut Mod 3/CustomFiles/art/carsDF`, `Mods/Donut Mod 3/CustomFiles/art/hudHD` and `Mods/Donut Mod 3/CustomFiles/art/iconsHD`.
 
 It also includes comments in INI files that would have been stripped from the compiled LMLM file.
 
