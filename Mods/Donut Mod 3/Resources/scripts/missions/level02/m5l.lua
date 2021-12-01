@@ -1,0 +1,15 @@
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\location\\kburger.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\vehicle\\apu_v.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\vehicle\\cletus_v.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\flatmeat.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\setelite.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\char\\cletus.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\char\\apu.p3d")
+	
+Game.LoadP3DFile("art\\icons\\cars\\firebird.p3d")
+Game.LoadP3DFile("art\\locators\\l2m5.p3d")
+Game.LoadP3DFile("art\\pickups\\roadkill.p3d")
+Game.LoadP3DFile("art\\pickups\\satellite_dish.p3d")
+
+Game.LoadDisposableCar("art\\cars\\cletu_v.p3d","cletu_v","OTHER")
+Game.LoadDisposableCar("art\\cars\\firebird.p3d","firebird","AI")

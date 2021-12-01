@@ -1,0 +1,333 @@
+Game.SelectMission("m7")
+	Game.SetMissionResetPlayerInCar("m7_current_carstart")
+	Game.SetDynaLoadData("l3z3.p3d;l3r2.p3d;l3r3.p3d;")
+	Game.UsePedGroup(5)
+
+	Game.AddStage(0) 
+		Game.SetHUDIcon("car_icon")
+		Game.SetStageMessageIndex(0)
+		
+		Game.AddObjective("getin")
+			Game.SetObjTargetVehicle("current")
+		Game.CloseObjective()
+	Game.CloseStage()
+
+	Game.AddStage(0) Game.RESET_TO_HERE()
+		Game.SetHUDIcon("ship")
+		Game.SetStageMessageIndex(3)
+		Game.SetStageTime(({75,30})[Difficulty.Current])
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("goto")
+			Game.AddNPC("crwmr","m7_crwmr_start") --crwmr - Crew Member (Copy of sail4 used specifically for this mission.)
+			Game.SetDestination("m7_seaspanker", "carsphere")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		
+		Game.StageStartMusicEvent("M7_start")
+		Game.SetStageMusicAlwaysOn()
+		Game.ShowStageComplete()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon("bart")
+		Game.SetStageMessageIndex(4)
+		Game.SetStageTime(({120,35})[Difficulty.Current])
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("goto")
+			Game.AddNPC("crwmr","m7_crwmr_start") --crwmr - Crew Member (Copy of sail4 used specifically for this mission.)
+			Game.SetDestination("m7_crwmr_trigger")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage(5)
+		Game.SetHUDIcon("crwmr")
+		Game.SetStageMessageIndex(5)
+		
+		Game.AddObjective("talkto")
+			Game.AddNPC("crwmr","m7_crwmr_start") --crwmr - Crew Member (Copy of sail4 used specifically for this mission.)
+			Game.SetTalkToTarget("crwmr", 0, 0)
+		Game.CloseObjective()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage() -- Dialog stage.
+		Game.AddObjective("dialogue")
+			--Game.AmbientAnimationRandomize(1,0)
+			--Game.AmbientAnimationRandomize(0,0)
+			Game.AddAmbientPcAnimation("dialogue_hands_on_hips")
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientPcAnimation("dialogue_yes")
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientPcAnimation("dialogue_hands_on_hips")
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientNpcAnimation("none")
+			Game.AddAmbientNpcAnimation("dialogue_hands_in_air")
+			Game.AddAmbientNpcAnimation("dialogue_scratch_head")
+			Game.AddAmbientNpcAnimation("dialogue_cross_arms")
+			Game.AddAmbientNpcAnimation("none")
+			Game.AddAmbientNpcAnimation("none")
+			--Game.SetCamBestSide("m1_bestside")
+			Game.SetDialogueInfo("lisa","crwmr","stowaway",0)
+			--Game.SetDialoguePositions("lis_cs_loc","cm_loc","shipcar_loc")
+		Game.CloseObjective()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon("duff")
+		Game.SetStageMessageIndex(6)
+		Game.SetStageTime(({275,245})[Difficulty.Current])
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("goto")
+			Game.SetDestination("m7_duffbeer", "carsphere")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.ShowStageComplete()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon("duffcan")
+		Game.SetStageMessageIndex(7)
+		Game.AddStageTime(-1)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("goto")
+			Game.SetDestination("m7_duff_can", "duff_can") -- Awesome pickup btw Kenny :)
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.ShowStageComplete()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon("ship")
+		Game.SetStageMessageIndex(8)
+		Game.AddStageTime(-1)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current]) 
+		
+		Game.AddObjective("goto")
+			Game.AddNPC("crwmr","m7_crwmr_start") --crwmr - Crew Member (Copy of sail4 used specifically for this mission.)
+			Game.SetDestination("m7_crwmr_trigger")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.ShowStageComplete()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage(5)
+		Game.SetHUDIcon("crwmr")
+		Game.SetStageMessageIndex(9)
+		Game.AddStageTime(-1)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("talkto")
+			Game.AddNPC("crwmr","m7_crwmr_start") --crwmr - Crew Member (Copy of sail4 used specifically for this mission.)
+			Game.SetTalkToTarget("crwmr", 0, 0)
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage() -- Dialog stage.
+		Game.AddStageTime(-1)
+		
+		Game.AddObjective("dialogue")
+			--Game.AmbientAnimationRandomize(1,0)
+			--Game.AmbientAnimationRandomize(0,0)
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientPcAnimation("dialogue_hands_in_air")
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientPcAnimation("dialogue_hands_on_hips")
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientNpcAnimation("dialogue_yes")
+			Game.AddAmbientNpcAnimation("none")
+			Game.AddAmbientNpcAnimation("dialogue_scratch_head")
+			Game.AddAmbientNpcAnimation("none")
+			Game.AddAmbientNpcAnimation("dialogue_yes")
+			--Game.SetCamBestSide("m1_bestside")
+			Game.SetDialogueInfo("lisa","crwmr","onemore",0)
+			--Game.SetDialoguePositions("lis_cs_loc","cm_loc","shipcar_loc")
+		Game.CloseObjective()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon("kamp")
+		Game.SetStageMessageIndex(10)
+		Game.AddStageTime(-1)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("goto")
+			Game.SetDestination("m7_kampkrusty", "carsphere")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.ShowStageComplete()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage(16) 
+		Game.SetHUDIcon("fish")
+		Game.SetStageMessageIndex(11)
+		Game.AddStageTime(-1)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+
+		Game.AddObjective("delivery")
+			for i = 1, 8, 1 do
+				Game.AddCollectible("m7_fish"..tostring(i),"fish")
+			end
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.StageStartMusicEvent("M7_drama")
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon( "ship" )
+		Game.SetStageMessageIndex(12)
+		Game.AddStageTime(-1)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("goto")
+			Game.AddNPC("crwmr","m7_crwmr_start") --crwmr - Crew Member (Copy of sail4 used specifically for this mission.)
+			Game.SetDestination("m7_crwmr_trigger")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.ShowStageComplete()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage(5)
+		Game.SetHUDIcon("crwmr")
+		Game.SetStageMessageIndex(13)
+		Game.AddStageTime(-1)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("talkto")
+			Game.AddNPC("crwmr","m7_crwmr_start") --crwmr - Crew Member (Copy of sail4 used specifically for this mission.)
+			Game.SetTalkToTarget("crwmr", 0, 0)
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+		Game.SetStageMusicAlwaysOn()
+	Game.CloseStage()
+
+	Game.AddStage() -- Dialog stage.
+		Game.AddObjective("dialogue")
+			--Game.AmbientAnimationRandomize(1,0)
+			--Game.AmbientAnimationRandomize(0,0)
+			Game.AddAmbientNpcAnimation("none")
+			--Game.SetCamBestSide("m1_bestside")
+			Game.SetDialogueInfo("lisa","crwmr","goodbye",0)
+			--Game.SetDialoguePositions("lis_cs_loc","cm_loc","shipcar_loc")
+		Game.CloseObjective()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon( "bart" )
+		Game.SetStageMessageIndex(14)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("goto")
+			Game.AddNPC("milhouse","m7_milhouse_start")
+			Game.SetDestination("m7_stairs","triggersphere")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.SetFadeOut(1.0)
+	Game.CloseStage()
+
+	Game.AddStage(1) -- Stay in black stage.
+		Game.AddStageCharacter("lisa","m7_lis_cs2_loc","","current","m7_shipcar_loc")	
+		
+		Game.AddObjective("timer")
+			Game.AddNPC("milhouse","m7_milhouse_start")
+			Game.StayInBlack()
+			Game.SetDurationTime(1)
+		Game.CloseObjective()
+	Game.CloseStage()
+	
+	Game.AddStage()
+		Game.AddObjective("timer")
+			Game.AddNPC("milhouse","m7_milhouse_start")
+			Game.SetDurationTime(1) 
+		Game.CloseObjective()
+	Game.CloseStage()
+	
+	Game.AddStage() -- Dialog stage.
+		Game.AddObjective("dialogue")
+			--Game.AddNPC("milhouse","mil_loc")
+			--Game.AmbientAnimationRandomize(1,0)
+			--Game.AmbientAnimationRandomize(0,0)
+			Game.AddAmbientNpcAnimation("none")
+			Game.AddAmbientNpcAnimation("none")
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientPcAnimation("none")
+			--Game.SetCamBestSide("m1_bestside")
+			Game.SetDialogueInfo("lisa","milhouse","why",0)
+			--Game.SetDialoguePositions("lis_cs2_loc","mil_loc","shipcar_loc")
+		Game.CloseObjective()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon("car_icon")
+		Game.SetStageMessageIndex(15)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddObjective("getin")
+			Game.AddNPC("milhouse","m7_milhouse_start")
+			Game.SetObjTargetVehicle("current")
+		Game.CloseObjective()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.SetHUDIcon("ship")
+		Game.SetStageMessageIndex(16)
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.AddStageVehicle("thrill_v","m7_thrill_v_carstart","NULL","missions\\l3m7\\thrill_v".. tostring(Difficulty.Current)..".con","milhouse")
+		
+		Game.AddObjective("goto")
+			Game.SetDestination("m7_milhouseambush", "carsphere")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+		
+		Game.SetCompletionDialog("boyfriend","milhouse")
+	Game.CloseStage()
+
+	Game.AddStage("final") -- Milhouse's Revenge
+		Game.SetHUDIcon("thrill_v") 
+		Game.SetStageMessageIndex(17)
+		Game.SetStageTime(({120,60})[Difficulty.Current])
+		Game.SetMaxTraffic(({2,4})[Difficulty.Current])
+		
+		Game.ActivateVehicle("thrill_v","NULL","chase")
+		
+		Game.AddObjective("losetail")
+			Game.SetObjTargetVehicle("thrill_v")
+			Game.SetObjDistance(({150,190})[Difficulty.Current])
+		Game.CloseObjective()
+		
+		Game.AddCondition("timeout") Game.CloseCondition()
+	Game.CloseStage()
+
+Game.CloseMission()

@@ -1,0 +1,21 @@
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\location\\casino.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\location\\planethy.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\vehicle\\wiggu_v.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\vehicle\\bsedan_v.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\char\\grampa.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\pills.p3d")
+
+Game.LoadP3DFile("art\\icons\\misc\\myst.p3d")
+Game.LoadP3DFile("art\\icons\\locations\\gasoline.p3d")
+Game.LoadP3DFile("art\\icons\\cars\\car_icon.p3d")
+Game.LoadP3DFile("art\\icons\\locations\\gasoline.p3d")
+Game.LoadP3DFile("art\\effects\\bonestorm_explosion.p3d")
+Game.LoadP3DFile("art\\locators\\l3m6.p3d")
+Game.LoadP3DFile("art\\pickups\\fish.p3d")
+Game.LoadP3DFile("art\\pickups\\donut_chocolate.p3d")
+Game.LoadP3DFile("art\\pickups\\buzzcola.p3d")
+Game.LoadP3DFile("art\\pickups\\pills_aggroleve.p3d")
+
+--IT'S WIGGUM TIME.
+Game.LoadDisposableCar("art\\cars\\wiggu_v.p3d","wiggu_v","OTHER")
+Game.LoadDisposableCar("art\\cars\\cSedan.p3d","cSedan","AI")

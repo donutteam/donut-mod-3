@@ -1,0 +1,9 @@
+SelectMission("m8sd");
+	AddStage(2);
+		SetCharacterToHide("lisa"); 
+		AddObjective("timer");
+			SetDurationTime(2);
+			SetGameOver();			// To prevent the mod from going to level 3 in Episode 1.
+		CloseObjective();
+	CloseStage();
+CloseMission();

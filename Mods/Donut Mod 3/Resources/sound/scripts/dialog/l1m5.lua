@@ -1,0 +1,15 @@
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_morwaste_1_convinit_Hom_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_morwaste_2_convinit_Frk_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_morwaste_3_convinit_Hom_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_morwaste_4_convinit_Frk_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData({
+	"sound/dialog/l1m5/C_morwaste_5_convinit_Hom_L1M5.rsd",
+	"sound/dialog/l1m5/C_morwaste_5_convinit_Hom_L1M5_alt1.rsd",
+},true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_bigidea_1_noboxconv_Frk_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_loseworker_1_noboxconv_Frk_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_helpout_1_convinit_Frk_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_helpout_2_convinit_Hom_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_helpout_3_convinit_Frk_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_whatthe_1_noboxconv_Hom_L1M5.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m5/C_ohboy_1_noboxconv_Hom_L1M5.rsd",true)

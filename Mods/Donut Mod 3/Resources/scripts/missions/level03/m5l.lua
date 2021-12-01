@@ -1,0 +1,15 @@
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\location\\casino.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\vehicle\\wiggu_v.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\char\\snake.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\char\\wiggum.p3d")
+
+Game.LoadP3DFile("art\\icons\\cars\\car_icon.p3d")
+Game.LoadP3DFile("art\\locators\\l3m5.p3d")
+Game.LoadP3DFile("art\\pickups\\jeans.p3d")
+Game.LoadP3DFile("art\\pickups\\moleman_dead.p3d")
+Game.LoadP3DFile("art\\pickups\\buzzcola.p3d")
+Game.LoadP3DFile("art\\pickups\\donut_chocolate.p3d")
+Game.LoadP3DFile("art\\pickups\\icecream_tub.p3d")
+
+Game.LoadDisposableCar("art\\cars\\wiggu_v.p3d","wiggu_v","AI")
+Game.LoadDisposableCar("art\\cars\\snake_v.p3d","snake_v","AI")

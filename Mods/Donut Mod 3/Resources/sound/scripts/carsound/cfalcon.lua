@@ -1,0 +1,1 @@
+SPTUtil.OutputSoundResourceData("sound/carsound/cfalcon_horn.rsd", false, false, 0.900000)

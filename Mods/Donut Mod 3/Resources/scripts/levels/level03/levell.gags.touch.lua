@@ -1,0 +1,40 @@
+-- Willie in the Observatory Window
+Game.GagBegin("gag_will.p3d")
+	Game.GagSetInterior("Observatory")
+	Game.GagSetCycle("single")
+	Game.GagSetPosition(158.831,-19.97,-328.777)
+	Game.GagSetRandom(1)
+	Game.GagSetSound("gag_will")
+	Game.GagSetSoundLoadDistances(25,30)
+	Game.GagSetTrigger("touch",153.049,-20,-339.926,2.5)
+Game.GagEnd()
+
+-- Ralph in the Observatory Window
+Game.GagBegin("gag_ralf.p3d")
+	Game.GagSetInterior("Observatory")
+	Game.GagSetCycle("single")
+	Game.GagSetPosition(153.733,-19.335,-338.94)
+	Game.GagSetRandom(1)
+	Game.GagSetSound("gag_sc_2")
+	Game.GagSetTrigger("touch",153.049,-20,-339.926,3.5)
+Game.GagEnd()
+
+-- ??? in the Observatory Window
+Game.GagBegin("gag_beem.p3d")
+	Game.GagSetInterior("Observatory")
+	Game.GagSetCycle("single")
+	Game.GagSetPosition(154.264,-20,-338.86)
+	Game.GagSetRandom(1)
+	Game.GagSetSound("gag_beem")
+	Game.GagSetTrigger("touch",153.049,-20,-339.926,1.4)
+Game.GagEnd()
+
+-- Bullies in the Observatory Window
+Game.GagBegin("gag_buly.p3d")
+	Game.GagSetInterior("Observatory")
+	Game.GagSetCycle("single")
+	Game.GagSetPosition(160.514,-18.594,-331.329)
+	Game.GagSetRandom(1)
+	Game.GagSetSound("gag_buly")
+	Game.GagSetTrigger("touch",153.049,-20,-339.926,2.5)
+Game.GagEnd()

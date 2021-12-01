@@ -1,0 +1,6 @@
+SPTUtil.OutputSoundResourceData("sound/dialog/l2m2/C_cleverpun_1_noboxconv_Moe_L2M2.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l2m2/C_mike_1_noboxconv_Moe_L2M2.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l2m2/C_bigidea_1_noboxconv_Moe_L2M2.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l2m2/C_spines_1_noboxconv_Moe_L2M2.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l2m2/C_dogs_1_noboxconv_Moe_L2M2.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l2m2/C_thisclose_1_noboxconv_Brt_L2M2.rsd",true)

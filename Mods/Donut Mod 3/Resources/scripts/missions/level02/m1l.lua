@@ -1,0 +1,15 @@
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\location\\trynsave.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\vehicle\\skinn_v.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\char\\jimbo.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\bonestor.p3d")
+Game.LoadP3DFile("art\\missions\\generic\\fline.p3d")
+	
+Game.LoadP3DFile("art\\icons\\cars\\car_icon.p3d")
+Game.LoadP3DFile("art\\locators\\l2m1.p3d")
+
+Game.LoadDisposableCar("art\\cars\\skinn_v.p3d","skinn_v","AI")
+Game.LoadDisposableCar("art\\cars\\scorp_v.p3d","scorp_v","AI")
+Game.LoadDisposableCar("art\\cars\\cCellC.p3d","cCellC","AI")
+Game.LoadDisposableCar("art\\cars\\oblit_v.p3d","oblit_v","AI")
+Game.LoadDisposableCar("art\\cars\\cDone.p3d","cDone","AI")
+Game.LoadDisposableCar("art\\cars\\cBone.p3d","cBone","AI")

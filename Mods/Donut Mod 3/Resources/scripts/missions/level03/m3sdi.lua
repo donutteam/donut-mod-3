@@ -1,0 +1,48 @@
+Game.SelectMission("m3sd")
+	Game.SetMissionResetPlayerOutCar("m3_lisa_start","m3_current_carstart")
+	Game.SetDynaLoadData("l3z1.p3d;l3r1.p3d;l3r5.p3d;l3r5_dam.p3d;")
+	Game.UsePedGroup(0)
+	Game.SetPresentationBitmap("art/frontend/dynaload/images/mis03_03.p3d")
+
+	Game.SetAnimatedCameraName("mission3camShape")
+	Game.SetAnimCamMulticontName("mission3cam")
+	Game.SetMissionStartCameraName("mission3camShape")
+	Game.SetMissionStartMulticontName("mission3cam")
+
+	Game.AddStage(5) Game.RESET_TO_HERE()
+		Game.SetHUDIcon("apu")
+		Game.SetStageMessageIndex(1)
+		Game.SetMaxTraffic(4)
+		
+		Game.AddObjective("talkto")
+			Game.AddNPC("apu", "m3_apu_start")
+			Game.AddStageVehicle("firebird","m3_firebird_carstart","NULL","missions\\l3m3\\firebird.con")
+			Game.SetTalkToTarget("apu", 0, 0)
+			
+			--[[
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk2")
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk3")
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk2")
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk4")
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk5")
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk6")
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk5")
+			Game.AddObjectiveNPCWaypoint("apu", "m3_apu_walk4")
+			]]
+			
+		Game.CloseObjective()
+	Game.CloseStage()
+
+	Game.AddStage(0)
+		Game.AddObjective("dialogue")
+			Game.AmbientAnimationRandomize(1, 0)      
+			Game.AmbientAnimationRandomize(0, 0)
+			Game.SetConversationCam(0, "npc_far")
+			Game.AddAmbientNpcAnimation("dialogue_hands_in_air")
+			Game.AddAmbientPcAnimation("none" )
+			Game.SetCamBestSide("m3_bestside")
+			Game.SetDialogueInfo("apu","lisa","burger",0)
+			Game.SetDialoguePositions("m3_lisa_burger","m3_apu_burger","m3_current_carstart")
+		Game.CloseObjective()
+	Game.CloseStage()
+Game.CloseMission()

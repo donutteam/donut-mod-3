@@ -1,0 +1,7 @@
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m7/C_stupiddrunk_1_convinit_Crl_L1M7.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m7/C_stupiddrunk_2_convinit_Hom_L1M7.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m7/C_stupiddrunk_3_convinit_Crl_L1M7.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m7/C_stupiddrunk_4_convinit_Hom_L1M7.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m7/C_transit_1_noboxconv_Bur_L1M7.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m7/C_wellwell_1_noboxconv_Hom_L1M7.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m7/C_homerone_1_noboxconv_Hom_L1M7.rsd",true)

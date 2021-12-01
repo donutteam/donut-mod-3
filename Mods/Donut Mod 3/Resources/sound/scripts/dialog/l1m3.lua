@@ -1,0 +1,10 @@
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m3/C_latework_1_convinit_Mrg_L1M3.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m3/C_latework_2_convinit_Hom_L1M3.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m3/C_start_1_noboxconv_Hom_L1M3.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m3/C_all_1_noboxconv_Hom_L1M3.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m3/C_dump_1_noboxconv_Hom_L1M3.rsd",true)
+SPTUtil.OutputSoundResourceData("sound/dialog/l1m3/C_done_1_convinit_Hom_L1M3.rsd",true)
+SPTUtil.OutputSoundResourceData({
+	"sound/dialog/l1m3/C_done_2_convinit_Smi_L1M3.rsd",
+	"sound/dialog/l1m3/C_done_2_convinit_Smi_L1M3_alt1.rsd",
+},true)

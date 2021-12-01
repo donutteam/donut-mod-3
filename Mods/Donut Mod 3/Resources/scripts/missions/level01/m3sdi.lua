@@ -1,0 +1,57 @@
+if Settings.DisableLevel1Mission3 then return end
+
+Game.SelectMission("m3sd")
+	Game.SetMissionResetPlayerOutCar("m3_homer_start","m3_current_carstart")
+	Game.SetDynaLoadData("l1z1.p3d;l1r1.p3d;l1r7.p3d;")
+	Game.UsePedGroup(0)
+	Game.SetPresentationBitmap("art/banners/l1m3bnnr.p3d")
+
+	Game.SetMissionStartCameraName("mission6camShape")
+	Game.SetMissionStartMulticontName("mission6cam")
+	Game.SetAnimatedCameraName("mission6camShape")
+	Game.SetAnimCamMulticontName("mission6cam")
+	
+	Game.AddStage(1)
+		Game.SetStageMessageIndex(1)
+		Game.SetHUDIcon("simpsons")
+		Game.SetMaxTraffic(2)
+		
+		Game.AddObjective("goto")
+			Game.SetDestination("m3_simpsonshouse","carsphere")
+			Game.SetCollectibleEffect("wrench_collect")
+		Game.CloseObjective()
+	Game.CloseStage()
+	
+	Game.AddStage(2) Game.RESET_TO_HERE()	
+		Game.SetHUDIcon("simpsons")
+		Game.SetStageMessageIndex(2)
+		
+		Game.AddObjective("interior","nearest road")
+			Game.AddNPC("marge","m3_marge_start")
+			Game.SetDestination("SimpsonsHouse","simp_mission_doorstar")
+		Game.CloseObjective()
+	Game.CloseStage()
+	
+	Game.AddStage(3)
+		Game.SetStageMessageIndex(3)
+		Game.SetHUDIcon("marge")
+		
+		Game.AddObjective("talkto")
+			Game.AddNPC("marge","m3_marge_start")
+			Game.SetTalkToTarget("marge", 0, 0)
+		Game.CloseObjective()
+	Game.CloseStage()
+	
+	Game.AddStage()
+		Game.AddObjective("dialogue")
+			Game.AddNPC("marge","m3_marge_start")
+			Game.AmbientAnimationRandomize(1,0)
+			Game.AmbientAnimationRandomize(0,0)
+			Game.AddAmbientNpcAnimation("dialogue_cross_arms")
+			Game.AddAmbientNpcAnimation("none")
+			Game.AddAmbientPcAnimation("none")
+			Game.AddAmbientPcAnimation("dialogue_hands_in_air")
+			Game.SetDialogueInfo("homer","marge","latework",0)
+		Game.CloseObjective()
+	Game.CloseStage()
+Game.CloseMission()

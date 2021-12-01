@@ -1,0 +1,17 @@
+Game.LoadP3DFile("art\\missions\\generic\\sch_door.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\digest.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\buzzcola.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\kbmeal.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\object\\litter.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\location\\school.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\char\\lisa.p3d")
+Game.LoadP3DFile("art\\frontend\\dynaload\\images\\msnicons\\vehicle\\skinn_v.p3d")
+Game.LoadP3DFile("art\\missions\\generic\\fline.p3d")
+
+Game.LoadP3DFile("art\\locators\\l1m1.p3d")
+Game.LoadP3DFile("art\\pickups\\science_project.p3d")
+Game.LoadP3DFile("art\\pickups\\krusty_meal.p3d")
+Game.LoadP3DFile("art\\pickups\\garbage_can.p3d")
+Game.LoadP3DFile("art\\pickups\\buzzcola.p3d")
+
+Game.LoadDisposableCar("art\\cars\\skinn_v.p3d","skinn_v","AI")

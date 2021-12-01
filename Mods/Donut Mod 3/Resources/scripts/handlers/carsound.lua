@@ -1,0 +1,1 @@
+SPTUtil.CompileSoundScriptFolder(Paths.Resources .. "/sound/scripts/carsound")
